@@ -1,0 +1,56 @@
+
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+input{
+  
+    padding: 8px;
+    margin: 8px 0px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    
+}
+
+.input.error input {
+    border-color: #ff3860;
+}
+input[type="checkbox"] {
+    position: fixed;
+    margin-left:-17px;
+    margin-top: 3px;
+}
+input[type="radio"] {
+    position: fixed;
+    margin-left:-20px;
+    margin-top: 2px;
+    
+}
+
+
+label{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:valid[focused="true"]{
+    border: 2px solid green;
+}
+
+input:invalid[focused="true"]{
+    border: 2px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
